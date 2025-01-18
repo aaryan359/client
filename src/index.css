@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* General styling for the toggle */
+.dark-mode-toggle .react-toggle-track {
+  background-color: #ddd;
+  border-radius: 30px;
+  height: 20px;
+  width: 40px;
+}
+
+.dark-mode-toggle .react-toggle-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Moon Icon */
+.custom-icon.moon-icon {
+  font-size: 12px;
+  position: relative;
+  color: #ffcc00;
+  top: 3px;
+  left: -1px;
+}
+
+/* Sun Icon */
+.custom-icon.sun-icon {
+  font-size: 12px;
+  position: relative;
+  color: #ff9900;
+  top: 3px;
+  left: 1px;
+}
+
+/* Thumb hover effect */
+.dark-mode-toggle .react-toggle-thumb:hover {
+  background: #e0e0e0;
+}
+
+/* Checked styling */
+.dark-mode-toggle .react-toggle--checked .react-toggle-track {
+  background-color: #4a90e2;
+}
+
+.dark-mode-toggle .react-toggle--checked .react-toggle-thumb {
+  left: calc(100% - 18px); /* Ensure smooth alignment */
+}
+
+
+
+
+
