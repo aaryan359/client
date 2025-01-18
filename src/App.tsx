@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import IntroSection from "./components/IntroSection";
+import PastWork from "./components/PastWork";
 
 
 
@@ -12,7 +14,9 @@ function App() {
        <>
         <Navbar/>
         <Hero/>
+        <IntroSection/>
         <Projects/>
+       <PastWork/>
         <Footer/>
         
         
