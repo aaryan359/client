@@ -1,28 +1,30 @@
+interface ProjectData {
+  project_name: string;
+  description: string;
+}
 
-function ProjectCard() {
+interface ProjectCardProps {
+  url: string;
+  data: ProjectData;
+}
+
+
+
+function ProjectCard({ url, data }: ProjectCardProps) {
+  console.log("data is", data);
   return (
-    <div className="w-[300px] h-[500px] p-20 bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden" style={{ backgroundImage: "url('../../assets/Lampungbrand.png')" }}>
-      {/* Overlay */}
+    <div
+      className="w-[300px] h-[500px] content-center justify-center align-middle bg-cover bg-center rounded-xl shadow-lg relative overflow-hidden"
+      style={{ backgroundImage: `url(${url})` }}
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black/90"></div>
 
-      {/* Content */}
       <div className="absolute bottom-6 left-4 space-y-3 text-white">
-        {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <div className="bg-[#FFA500] h-[60px] w-[60px] flex items-center justify-center rounded-lg">
-            <img src="/path-to-logo.png" alt="Lampung Logo" className="h-[40px] w-[40px]" />
-          </div>
-          <span className="text-lg font-bold">Lampung</span>
+          <span className="text-2xl font-bold">{data.project_name}</span>
         </div>
+        <p className="text-sm text-[#A1A1A1]">{data.description}</p>
 
-        {/* Title and Description */}
-        
-        <h3 className="text-2xl font-bold">Brand Logo</h3>
-        <p className="text-sm text-gray-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-
-        {/* Arrow Button */}
         <button className="bg-white text-black h-10 w-10 flex items-center justify-center rounded-full shadow-md hover:scale-105 transition transform">
           <svg
             xmlns="http://www.w3.org/2000/svg"
