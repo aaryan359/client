@@ -8,6 +8,7 @@ const projects = [
     url: project1,
     data: {
       project_name: "Open Course",
+      link:'https://github.com/aaryan359/opencourse',
       description:
         "Open Course is an educational community platform that connects learners and educators, offering courses, resources, and a collaborative environment.",
     },
@@ -17,6 +18,7 @@ const projects = [
     url: everypenny,
     data: {
       project_name: "EveryPenny",
+      link:'https://github.com/aaryan359/reactnativeproject',
       description:
         "EveryPenny is a comprehensive financial management app designed to help users track expenses, budget effectively, and achieve their financial goals.",
     },
@@ -32,7 +34,7 @@ function Projects() {
 
       <div className="flex flex-wrap gap-8 p-12 justify-center">
         {projects.map((project) => (
-          <ProjectCard key={project.id} url={project.url} data={project.data} />
+          <ProjectCard key={project.id} url={project.url} data={project.data} link={project.data.link} />
         ))}
       </div>
     </div>

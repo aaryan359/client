@@ -1,17 +1,23 @@
 interface ProjectData {
   project_name: string;
   description: string;
+  link:string;
 }
 
 interface ProjectCardProps {
   url: string;
   data: ProjectData;
+  link:string;
+
 }
 
 
 
-function ProjectCard({ url, data }: ProjectCardProps) {
-  console.log("data is", data);
+
+
+function ProjectCard({ url, data,link }: ProjectCardProps) {
+ 
+  console.log("link is ",link)
   return (
     <div
       className="w-[300px] h-[500px] content-center justify-center align-middle bg-cover bg-center rounded-xl shadow-lg relative overflow-hidden"
@@ -25,7 +31,9 @@ function ProjectCard({ url, data }: ProjectCardProps) {
         </div>
         <p className="text-sm text-[#A1A1A1]">{data.description}</p>
 
-        <button className="bg-white text-black h-10 w-10 flex items-center justify-center rounded-full shadow-md hover:scale-105 transition transform">
+        <a  href={link} className="bg-white text-black h-10 w-10 flex items-center justify-center rounded-full shadow-md hover:scale-105 transition transform"
+        target="_blank"
+         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -40,7 +48,7 @@ function ProjectCard({ url, data }: ProjectCardProps) {
               d="M12 4.5v15m7.5-7.5h-15"
             />
           </svg>
-        </button>
+        </a>
       </div>
     </div>
   );
