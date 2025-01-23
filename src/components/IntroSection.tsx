@@ -1,8 +1,8 @@
-import React from 'react';
+import { img1,img2,img3 } from "../utils";
 
 function IntroSection() {
     return (
-        <div className="bg-[#10101E] dark:bg-[#181818] h-screen flex justify-between items-center px-20">
+        <div className="bg-[#ffff] dark:bg-[#10101E] h-screen flex justify-between items-center px-20">
             {/* Left Side (Main content) */}
             <div className="flex flex-col items-start justify-center w-1/2">
                 {/* Introduction Section */}
@@ -10,7 +10,7 @@ function IntroSection() {
                     <p>Introduction</p>
                 </div>
 
-                <div className="ml-20 text-white dark:text-[#E0E0E0] text-[42.91px] font-medium leading-[53.4px] tracking-[-0.025em] text-left">
+                <div className="ml-20 text-black dark:text-[#E0E0E0] text-[42.91px] font-medium leading-[53.4px] tracking-[-0.025em] text-left">
                     <p>
                         Hello!, I’m
                         <span className="ml-2 font-extrabold text-[42.91px] leading-[53.4px] tracking-[-0.025em]">
@@ -35,23 +35,22 @@ function IntroSection() {
             {/* Right Side (Content div with text) */}
             <div className="w-1/2 flex justify-center items-center">
                 <div className="relative w-[600px] h-[450px] flex justify-center items-center opacity-100 space-x-4">
-                    First Image
                     <img
-                        src="../assets/image1(2).png"
+                        src={img1}
                         alt="Image 1"
                         className="w-[180px] h-auto object-contain"
                     />
 
                     {/* Second Image */}
                     <img
-                        src="../assets/image2.png"
+                        src={img2}
                         alt="Image 2"
                         className="w-[180px] h-auto object-contain"
                     />
 
                     {/* Third Image */}
                     <img
-                        src="../assets/image3.png"
+                        src={img3}
                         alt="Image 3"
                         className="w-[180px] h-auto object-contain"
                     />

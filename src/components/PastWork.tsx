@@ -1,9 +1,9 @@
 function PastWork() {
   return (
-    <div className="bg-[#10101E] dark:bg-[#181818] h-screen flex flex-col justify-center items-center px-20">
+    <div className="bg-[#ffff] dark:bg-[#10101E] h-screen flex flex-col justify-center items-center px-20">
       {/* Upper section with two divs side by side */}
       <div className="flex justify-evenly items-start w-full mb-10">
-        <div className="text-white dark:text-white text-left text-[50px] font-semibold leading-[48.24px] tracking-[0.010em] w-[373px] h-[145px] opacity-100">
+        <div className="text-black dark:text-white text-left text-[50px] font-semibold leading-[48.24px] tracking-[0.010em] w-[373px] h-[145px] opacity-100">
           Clients & Companies I've worked with
         </div>
 
@@ -13,10 +13,10 @@ function PastWork() {
       </div>
 
       {/* Quote section below */}
-      <div className="relative bg-[#10101E] dark:bg-[#181818] opacity-100 mt-10 p-10 w-full">
+      <div className="relative bg-[#ffff] dark:bg-[#10101E] opacity-100 mt-10 p-10 w-full">
         {/* Quote Heading */}
         <div className="w-full text-left pl-10">
-          <p className="text-white dark:text-white text-[60px] font-semibold italic leading-[52.73px] tracking-[-0.04em]">
+          <p className="text-black dark:text-white text-[60px] font-semibold italic leading-[52.73px] tracking-[-0.04em]">
             Good design is a language, not a style
           </p>
         </div>
