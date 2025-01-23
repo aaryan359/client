@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <div className="bg-white dark:bg-[#10101E] text-black dark:text-white flex flex-col items-center justify-center space-y-10 p-10 relative">
